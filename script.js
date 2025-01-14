@@ -22,8 +22,7 @@ console.info = function(logsOfConsole){
     originalConsoleInfoXyZ(logsOfConsole)
 }
 
-
-document.querySelector("body").innerHTML = document.querySelector("body").innerHTML + `
+document.querySelector("head").innerHTML =`
 <style>
     .consoleLOggerXYZBtn{
         z-index: 9999999999;
@@ -36,6 +35,10 @@ document.querySelector("body").innerHTML = document.querySelector("body").innerH
         width: 45px;
     }
 </style>
+
+` + document.querySelector("head").innerHTML
+document.querySelector("body").innerHTML = document.querySelector("body").innerHTML + `
+
 <div class="consoleLOggerXYZBtn">
     <img src="https://winaero.com/blog/wp-content/uploads/2019/06/WIndows-Terminal-icon.png" alt="">
 </div>
@@ -53,14 +56,13 @@ function consoleLOggerXYZBtnListener() {
                 document.getElementsByClassName("consoleLOggerXYZ")[0].parentNode.removeChild(document.getElementsByClassName("consoleLOggerXYZ")[0])
             }
         } else {
-            document.querySelector("body").innerHTML = document.querySelector("body").innerHTML + `
+            document.querySelector("head").innerHTML = `
                 <style class="consoleLOggerXYZ">
                     *{
                         padding: 0;
                         margin: 0;
                         box-sizing: border-box;
                         text-align: left;
-                        font-family: 'Courier New', Courier, monospace;
                     }
                     .consoleLOggerXYZLogs{
                         background-color: rgb(33, 33, 33);
@@ -69,6 +71,7 @@ function consoleLOggerXYZBtnListener() {
                         z-index: 999999999;
                         color: white;
                         width: 100%;
+                        font-family: 'Courier New', Courier, monospace;
                         padding: 15px;
                         font-size: 15px;
                         top: 0px;
@@ -95,6 +98,8 @@ function consoleLOggerXYZBtnListener() {
                         background-color:rgba(237, 126, 126, 0.28);
                     }
                 </style>
+            ` + document.querySelector("head").innerHTML
+            document.querySelector("body").innerHTML = document.querySelector("body").innerHTML + `
                 <div class="consoleLOggerXYZ consoleLOggerXYZLogs">
                     <div>
                         <h2>Console Display</h2>
