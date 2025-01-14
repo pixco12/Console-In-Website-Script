@@ -68,7 +68,7 @@ function consoleLOggerXYZBtnListener() {
                         z-index: 999999999;
                         color: white;
                         width: 100%;
-                        font-family: 'Courier New', Courier, monospace;
+                        font-family: 'Courier New', Courier, monospace !important;
                         padding: 15px;
                         font-size: 15px;
                         top: 0px;
