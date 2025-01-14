@@ -60,6 +60,7 @@ function consoleLOggerXYZBtnListener() {
                         margin: 0;
                         box-sizing: border-box;
                         text-align: left;
+                        font-family: 'Courier New', Courier, monospace;
                     }
                     .consoleLOggerXYZLogs{
                         background-color: rgb(33, 33, 33);
@@ -68,7 +69,6 @@ function consoleLOggerXYZBtnListener() {
                         z-index: 999999999;
                         color: white;
                         width: 100%;
-                        font-family: 'Courier New', Courier, monospace !important;
                         padding: 15px;
                         font-size: 15px;
                         top: 0px;
