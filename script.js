@@ -22,7 +22,7 @@ console.info = function(logsOfConsole){
     originalConsoleInfoXyZ(logsOfConsole)
 }
 
-document.querySelector("head").innerHTML =`
+document.querySelector("head").innerHTML = document.querySelector("head").innerHTML + `
 <style>
     .consoleLOggerXYZBtn{
         z-index: 9999999999;
@@ -36,7 +36,7 @@ document.querySelector("head").innerHTML =`
     }
 </style>
 
-` + document.querySelector("head").innerHTML
+`
 document.querySelector("body").innerHTML = document.querySelector("body").innerHTML + `
 
 <div class="consoleLOggerXYZBtn">
@@ -56,7 +56,7 @@ function consoleLOggerXYZBtnListener() {
                 document.getElementsByClassName("consoleLOggerXYZ")[0].parentNode.removeChild(document.getElementsByClassName("consoleLOggerXYZ")[0])
             }
         } else {
-            document.querySelector("head").innerHTML = `
+            document.querySelector("head").innerHTML = document.querySelector("head").innerHTML +`
                 <style class="consoleLOggerXYZ">
                     *{
                         padding: 0;
@@ -99,7 +99,7 @@ function consoleLOggerXYZBtnListener() {
                         background-color:rgba(237, 126, 126, 0.28);
                     }
                 </style>
-            ` + document.querySelector("head").innerHTML
+            `
             document.querySelector("body").innerHTML = document.querySelector("body").innerHTML + `
                 <div class="consoleLOggerXYZ consoleLOggerXYZLogs">
                     <div>
