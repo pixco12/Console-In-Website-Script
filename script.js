@@ -20,6 +20,9 @@ console.info = function(logsOfConsole){
     logsCaptured.push({type : "info", info : logsOfConsole})
     originalConsoleInfoXyZ(logsOfConsole)
 }
+window.addEventListener("error", (e) => {
+    logsCaptured.push({type : "error", info : `${e.message} <a href="./">${e.filename ? new URL(e.filename).pathname : e.filename}:${e.lineno}:${e.colno}</a>`})
+})
 
 document.querySelector("head").innerHTML = document.querySelector("head").innerHTML + `
 <style>
@@ -70,7 +73,7 @@ function consoleLOggerXYZBtnListener() {
                         height: 100vh !important;
                         z-index: 999999999 !important;
                         color: white !important;
-                        width: 100vh !important;
+                        width: 100vw !important;
                         font-family: 'Courier New', Courier, monospace !important;
                         padding: 15px;
                         font-size: 15px;
@@ -81,6 +84,7 @@ function consoleLOggerXYZBtnListener() {
                         display : flex !important;
                         flex-direction : column !important;
                         gap: 7px !important;
+                        overflow: scroll !important;
                     }
                     .consoleLOggerXYZLogs p{
                         padding-left: 10px !important;
@@ -103,6 +107,9 @@ function consoleLOggerXYZBtnListener() {
                     p{
                         background-color: transparent !important;
                         color: white !important;
+                    }
+                    a{
+                        color: rgb(1, 156, 208) !important;
                     }
                 </style>
             `
