@@ -29,6 +29,7 @@ document.querySelector("head").innerHTML = document.querySelector("head").innerH
         position: fixed !important;
         right: 10px !important;
         bottom: 10px !important;
+        background-color: transparent !important;
     }
     .consoleLOggerXYZBtn img{
         height: 45px !important;
