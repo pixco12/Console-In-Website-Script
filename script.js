@@ -1,4 +1,3 @@
-
 const originalConsoleLogXyZ = console.log
 const originalConsoleInfoXyZ = console.info
 const originalConsoleWarnXyZ = console.warn
@@ -25,7 +24,7 @@ console.info = function(logsOfConsole){
 document.querySelector("head").innerHTML = document.querySelector("head").innerHTML + `
 <style>
     .consoleLOggerXYZBtn{
-        z-index: 9999999999;
+        z-index: 9999999999 !important;
         position: fixed !important;
         right: 10px !important;
         bottom: 10px !important;
@@ -69,7 +68,7 @@ function consoleLOggerXYZBtnListener() {
                         background-color: rgb(33, 33, 33) !important;
                         position: fixed !important;
                         height: 100vh !important;
-                        z-index: 999999999;
+                        z-index: 999999999 !important;
                         color: white !important;
                         width: 100vh !important;
                         font-family: 'Courier New', Courier, monospace !important;
@@ -79,9 +78,9 @@ function consoleLOggerXYZBtnListener() {
                         right:0px !important;
                         left:0px !important;
                         bottom:0px !important;
-                        display : flex;
-                        flex-direction : column;
-                        gap: 7px;
+                        display : flex !important;
+                        flex-direction : column !important;
+                        gap: 7px !important;
                     }
                     .consoleLOggerXYZLogs p{
                         padding-left: 10px !important;
@@ -97,6 +96,13 @@ function consoleLOggerXYZBtnListener() {
                     }
                     .consoleLOggerXYZLogserror{
                         background-color:rgba(237, 126, 126, 0.28) !important;
+                    }
+                    div{
+                        background-color: transparent !important;
+                    }
+                    p{
+                        background-color: transparent !important;
+                        color: white !important;
                     }
                 </style>
             `
@@ -135,4 +141,3 @@ function consoleLOggerXYZBtnListener() {
 }
 
 consoleLOggerXYZBtnListener()
-
