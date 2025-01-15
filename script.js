@@ -63,6 +63,7 @@ function consoleLOggerXYZBtnListener() {
                         margin: 0;
                         box-sizing: border-box;
                         text-align: left;
+                        background-color: transparent;
                     }
                     .consoleLOggerXYZLogs{
                         background-color: rgb(33, 33, 33);
