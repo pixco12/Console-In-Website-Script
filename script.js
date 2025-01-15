@@ -26,16 +26,16 @@ document.querySelector("head").innerHTML = document.querySelector("head").innerH
 <style>
     .consoleLOggerXYZBtn{
         z-index: 9999999999;
-        position: fixed;
-        right: 10px;
-        bottom: 10px;
+        position: fixed !important;
+        right: 10px !important;
+        bottom: 10px !important;
     }
     .consoleLOggerXYZBtn img{
-        height: 45px;
-        width: 45px;
+        height: 45px !important;
+        width: 45px !important;
     }
     div{
-        background-color: transparent;
+        background-color: transparent !important;
     }
 </style>
 
@@ -64,41 +64,41 @@ function consoleLOggerXYZBtnListener() {
                     *{
                         padding: 0;
                         margin: 0;
-                        box-sizing: border-box;
-                        text-align: left;
+                        box-sizing: border-box !important;
+                        text-align: left !important;
                     }
                     .consoleLOggerXYZLogs{
-                        background-color: rgb(33, 33, 33);
-                        position: fixed;
-                        height: 100vh;
+                        background-color: rgb(33, 33, 33) !important;
+                        position: fixed !important;
+                        height: 100vh !important;
                         z-index: 999999999;
-                        color: white;
-                        width: 100%;
-                        font-family: 'Courier New', Courier, monospace;
+                        color: white !important;
+                        width: 100vh !important;
+                        font-family: 'Courier New', Courier, monospace !important;
                         padding: 15px;
                         font-size: 15px;
-                        top: 0px;
-                        right:0px;
-                        left:0px;
-                        bottom:0px;
+                        top: 0px !important;
+                        right:0px !important;
+                        left:0px !important;
+                        bottom:0px !important;
                         display : flex;
                         flex-direction : column;
                         gap: 7px;
                     }
                     .consoleLOggerXYZLogs p{
-                        padding-left: 10px;
+                        padding-left: 10px !important;
                     }
                     .consoleLOggerXYZLogs .consoleLOggerXYZLogslog{
-                        padding-left: 27px;
+                        padding-left: 27px !important;
                     }
                     .consoleLOggerXYZLogs .consoleLOggerXYZLogsinfo{
-                        padding-left: 27px;
+                        padding-left: 27px !important;
                     }
                     .consoleLOggerXYZLogswarn{
-                        background-color:rgba(237, 213, 126, 0.28);
+                        background-color:rgba(237, 213, 126, 0.28) !important;
                     }
                     .consoleLOggerXYZLogserror{
-                        background-color:rgba(237, 126, 126, 0.28);
+                        background-color:rgba(237, 126, 126, 0.28) !important;
                     }
                 </style>
             `
