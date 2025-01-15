@@ -35,9 +35,6 @@ document.querySelector("head").innerHTML = document.querySelector("head").innerH
         height: 45px !important;
         width: 45px !important;
     }
-    div{
-        background-color: transparent !important;
-    }
 </style>
 
 `
