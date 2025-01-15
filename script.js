@@ -9,11 +9,11 @@ console.log = function(logsOfConsole){
     originalConsoleLogXyZ(logsOfConsole)
 }
 console.warn = function(logsOfConsole){
-    logsCaptured.push({type : "warn", info : logsOfConsole})
+    logsCaptured.push({type : "warn", info : "! " + logsOfConsole})
     originalConsoleWarnXyZ(logsOfConsole)
 }
 console.error = function(logsOfConsole){
-    logsCaptured.push({type : "error", info : logsOfConsole})
+    logsCaptured.push({type : "error", info : "× " + logsOfConsole})
     originalConsoleErrorXyZ(logsOfConsole)
 }
 console.info = function(logsOfConsole){
@@ -21,7 +21,7 @@ console.info = function(logsOfConsole){
     originalConsoleInfoXyZ(logsOfConsole)
 }
 window.addEventListener("error", (e) => {
-    logsCaptured.push({type : "error", info : `${e.message} <a href="./">${e.filename ? new URL(e.filename).pathname : e.filename}:${e.lineno}:${e.colno}</a>`})
+    logsCaptured.push({type : "error", info : `× ${e.message} <a href="./">${e.filename ? new URL(e.filename).pathname : e.filename}:${e.lineno}:${e.colno}</a>`})
 })
 
 document.querySelector("head").innerHTML = document.querySelector("head").innerHTML + `
@@ -90,10 +90,10 @@ function consoleLOggerXYZBtnListener() {
                         padding-left: 10px !important;
                     }
                     .consoleLOggerXYZLogs .consoleLOggerXYZLogslog{
-                        padding-left: 27px !important;
+                        padding-left: 28px !important;
                     }
                     .consoleLOggerXYZLogs .consoleLOggerXYZLogsinfo{
-                        padding-left: 27px !important;
+                        padding-left: 28px !important;
                     }
                     .consoleLOggerXYZLogswarn{
                         background-color:rgba(237, 213, 126, 0.28) !important;
@@ -127,18 +127,7 @@ function consoleLOggerXYZBtnListener() {
                 </div>
             `
             for (let i = 0; i < logsCaptured.length; i++){
-                if (logsCaptured[i].type == "log"){
-                    document.querySelector(".consoleLOggerXYZLogs").innerHTML = document.querySelector(".consoleLOggerXYZLogs").innerHTML + `<p class="consoleLOggerXYZLogslog">${logsCaptured[i].info}</p>`
-                }
-                if (logsCaptured[i].type == "info"){
-                    document.querySelector(".consoleLOggerXYZLogs").innerHTML = document.querySelector(".consoleLOggerXYZLogs").innerHTML + `<p class="consoleLOggerXYZLogsinfo">${logsCaptured[i].info}</p>`
-                }
-                if (logsCaptured[i].type == "warn"){
-                    document.querySelector(".consoleLOggerXYZLogs").innerHTML = document.querySelector(".consoleLOggerXYZLogs").innerHTML + `<p class="consoleLOggerXYZLogswarn">! ${logsCaptured[i].info}</p>`
-                }
-                if (logsCaptured[i].type == "error"){
-                    document.querySelector(".consoleLOggerXYZLogs").innerHTML = document.querySelector(".consoleLOggerXYZLogs").innerHTML + `<p class="consoleLOggerXYZLogserror">× ${logsCaptured[i].info}</p>`
-                }
+                document.querySelector(".consoleLOggerXYZLogs").innerHTML = document.querySelector(".consoleLOggerXYZLogs").innerHTML + `<p class="consoleLOggerXYZLogs${logsCaptured[i].type}">${logsCaptured[i].info}</p>`
             }
 
 
