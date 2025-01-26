@@ -66,6 +66,7 @@ function consoleLOggerXYZBtnListener() {
                         margin: 0;
                         box-sizing: border-box !important;
                         text-align: left !important;
+                        font-family: 'Courier New', Courier, monospace !important;
                     }
                     .consoleLOggerXYZLogs{
                         background-color: rgb(33, 33, 33) !important;
