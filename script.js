@@ -88,6 +88,7 @@ function consoleLOggerXYZBtnListener() {
                         overflow: scroll !important;
                     }
                     .consoleLOggerXYZLogs p{
+                        font-size: small !important;
                         padding-left: 10px !important;
                     }
                     .consoleLOggerXYZLogs .consoleLOggerXYZLogslog{
@@ -104,6 +105,8 @@ function consoleLOggerXYZBtnListener() {
                     }
                     div{
                         background-color: transparent !important;
+                        color: white !important;
+                        font-size: medium !important;
                     }
                     p{
                         background-color: transparent !important;
