@@ -1,5 +1,5 @@
 # Console-In-Website-Display-Script
-This is a js script that allows you to see the console of your website from the website itself. Why would i need this? Example your coding on a tablet and arent able to access console through inspect element, instead you can paste this script into your website and you will be able to see your console but not interact with it.
+This is a js script that allows you to use and see the console of your website from the website itself. Why would i need this? Example your coding on a tablet and arent able to access console through inspect element, instead you can paste this script into your website and you will be able to see your console and even interact with it.
 
 # How to setup
 To setup you must :
@@ -11,3 +11,10 @@ To setup you must :
 # How to use
 
 - Click on the console icon at the bottom right of the website page you pasted the script in to view the console.
+- To execute a js command go to the console and enter the thing you want to execute into the text box and click the execute button above the text box.
+
+# Update Log
+
+- Fixed Bugs
+- Changed console icon
+- Added a way to execute js commands in the console display
