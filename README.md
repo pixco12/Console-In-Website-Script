@@ -5,7 +5,7 @@ This is a js script that allows you to use and see the console of your website f
 To setup you must :
 
 1. Open up the html of the website page you want it in.
-2. Copy and paste `<script>document.write('<script src="https://cdn.jsdelivr.net/gh/pixco12/Console-In-Website-Script@latest/script.js?ts=' + new Date().getTime() + '"><\/script>')</script>` into the body at the beginning of the body (make sure its before all your scripts).
+2. Copy and paste `<script src="https://cdn.jsdelivr.net/gh/pixco12/Console-In-Website-Script@latest/script.js?v=1.1.2"></script>` into the body at the beginning of the body (make sure its before all your scripts). (check for version updates once in a while)
 3. Your all set! Read the instructions on how to use.
 
 # How to use
@@ -13,8 +13,7 @@ To setup you must :
 - Click on the console icon at the bottom right of the website page you pasted the script in to view the console.
 - To execute a js command go to the console and enter the thing you want to execute into the text box and click the execute button above the text box.
 
-# Update Log
+# Update Log (v 1.1.2)
 
 - Fixed Bugs
-- Changed console icon
-- Added a way to execute js commands in the console display
+- Better Ui
