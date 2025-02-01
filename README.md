@@ -2,6 +2,8 @@
 This is a js script that allows you to use and see the console of your website from the website itself. Why would i need this? Example your coding on a tablet and arent able to access console through inspect element, instead you can paste this script into your website and you will be able to see your console and even interact with it.
 
 Demo Website : https://consoleinwebsitescriptdemo.netlify.app/ (v 1.1.2)
+
+**Errors from the executed code using the text box wont show if your using safari, same goes for defining variables (it wont work).** This is due to safari's limitations.
 # How to setup
 To setup you must :
 
