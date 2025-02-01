@@ -5,7 +5,7 @@ This is a js script that allows you to use and see the console of your website f
 To setup you must :
 
 1. Open up the html of the website page you want it in.
-2. Copy and paste `<script src="https://cdn.jsdelivr.net/gh/pixco12/Console-In-Website-Script@latest/script.js?v=1.1.2"></script>` into the body at the beginning of the body (make sure its before all your scripts). (check for version updates once in a while)
+2. Copy and paste `<script src="https://cdn.jsdelivr.net/gh/pixco12/Console-In-Website-Script@main/script.js?v=1.1.2"></script>` into the body at the beginning of the body (make sure its before all your scripts). (check for version updates once in a while)
 3. Your all set! Read the instructions on how to use.
 
 # How to use
