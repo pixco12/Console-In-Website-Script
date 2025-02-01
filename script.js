@@ -140,7 +140,7 @@ function consoleLOggerXYZBtnListener() {
                     }
                     div{
                         background-color: transparent !important;
-                        color: white !important;
+                        color: black !important;
                     }
                     p{
                         background-color: transparent !important;
