@@ -118,7 +118,7 @@ function consoleLOggerXYZBtnListener() {
                         
                     }
                     .consoleLOggerXYZLogs::-webkit-scrollbar{
-                        display:none;
+                        
                     }
                     .consoleLOggerXYZLogs p {
                         padding-left: 10px !important;
