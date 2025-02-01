@@ -14,7 +14,7 @@ document.querySelector("head").innerHTML = document.querySelector("head").innerH
         right: 10px !important;
         bottom: 10px !important;
         background-color: rgb(33, 33, 33) !important;
-        border: 2px black solid !important;
+        border: 5px black solid !important;
         border-radius: 10px !important;
         display: flex !important;
         justify-content: center !important;
@@ -79,11 +79,16 @@ function consoleLOggerXYZBtnListener() {
     consoleLOggerXYZGrabLogs()
     document.querySelector(".consoleLOggerXYZBtn").addEventListener("click", () => {
         if (document.getElementsByClassName("consoleLOggerXYZ").length > 0) {
-            
+            document.querySelector(".consoleLOggerXYZBtn h3").innerHTML = ">_"
+            document.querySelector(".consoleLOggerXYZBtn").style.top = ``
+            document.querySelector(".consoleLOggerXYZBtn").style.bottom = `10px`
             while (document.getElementsByClassName("consoleLOggerXYZ").length > 0){
                 document.getElementsByClassName("consoleLOggerXYZ")[0].parentNode.removeChild(document.getElementsByClassName("consoleLOggerXYZ")[0])
             }
         } else {
+            document.querySelector(".consoleLOggerXYZBtn h3").innerHTML = "×"
+            document.querySelector(".consoleLOggerXYZBtn").style.bottom = ``
+            document.querySelector(".consoleLOggerXYZBtn").style.top = `10px`
             document.querySelector("head").innerHTML = document.querySelector("head").innerHTML +`
                 <style class="consoleLOggerXYZ">
                     *{
@@ -115,10 +120,10 @@ function consoleLOggerXYZBtnListener() {
                         gap: 7px !important;
                         overflow-y: scroll !important;
                         box-sizing: border-box !important;
-                        
+                        padding-bottom: 160px !important;
                     }
                     .consoleLOggerXYZLogs::-webkit-scrollbar{
-                        
+                        display:none;
                     }
                     .consoleLOggerXYZLogs p {
                         padding-left: 10px !important;
@@ -140,7 +145,7 @@ function consoleLOggerXYZBtnListener() {
                     }
                     div{
                         background-color: transparent !important;
-                        color: black !important;
+                        color: white !important;
                     }
                     p{
                         background-color: transparent !important;
@@ -173,7 +178,8 @@ function consoleLOggerXYZBtnListener() {
                         flex-direction: column !important;
                         padding-right: 20px !important;
                         padding-left: 20px !important;
-                        height: 100% !important;
+                        height: fit-content !important;
+                        background-color: transparent;
                     }
 
                     #consoleLOggerXYZLogscmdexecutebtn {
@@ -183,6 +189,7 @@ function consoleLOggerXYZBtnListener() {
                         text-align: center !important;
                         width: fit-content !important;
                         margin: auto !important;
+                        margin-top: 10px !important;
                         margin-bottom: 20px !important;
                         padding: 7px !important;
                         border-radius: 7px !important;
@@ -228,4 +235,3 @@ function consoleLOggerXYZBtnListener() {
 }
 
 consoleLOggerXYZBtnListener()
-
