@@ -40,24 +40,24 @@ window.addEventListener("error", (e) => {
     logsCaptured.push({type : "error", info : `× ${e.message} <a href="./">${e.filename ? new URL(e.filename).pathname : e.filename}:${e.lineno}:${e.colno}</a>`})
 
 })
-function consoleLOggerXYZGrabLogs(){
-    console.log = function(logsOfConsole){
-        logsCaptured.push({type : "log", info : logsOfConsole})
-        originalConsoleLogXyZ(logsOfConsole)
-    }
-    console.warn = function(logsOfConsole){
-        logsCaptured.push({type : "warn", info : "! " + logsOfConsole})
-        originalConsoleWarnXyZ(logsOfConsole)
-    }
-    console.error = function(logsOfConsole){
-        logsCaptured.push({type : "error", info : "× " + logsOfConsole})
-        originalConsoleErrorXyZ(logsOfConsole)
-    }
-    console.info = function(logsOfConsole){
-        logsCaptured.push({type : "info", info : logsOfConsole})
-        originalConsoleInfoXyZ(logsOfConsole)
-    }
+
+console.log = function(logsOfConsole){
+    logsCaptured.push({type : "log", info : logsOfConsole})
+    originalConsoleLogXyZ(logsOfConsole)
 }
+console.warn = function(logsOfConsole){
+    logsCaptured.push({type : "warn", info : "! " + logsOfConsole})
+    originalConsoleWarnXyZ(logsOfConsole)
+}
+console.error = function(logsOfConsole){
+    logsCaptured.push({type : "error", info : "× " + logsOfConsole})
+    originalConsoleErrorXyZ(logsOfConsole)
+}
+console.info = function(logsOfConsole){
+    logsCaptured.push({type : "info", info : logsOfConsole})
+    originalConsoleInfoXyZ(logsOfConsole)
+}
+
 
 function consoleLOggerXYZShowLogs() {
     document.querySelector(".consoleLOggerXYZLogs").innerHTML = `
@@ -219,13 +219,11 @@ function consoleLOggerXYZBtnListener() {
                     <textarea id="consoleLOggerXYZLogstextarea" placeholder="Execute Javascript Commands"></textarea>
                 </div>
             `
-            consoleLOggerXYZGrabLogs()
             setTimeout(consoleLOggerXYZShowLogs, 0);
             document.querySelector("#consoleLOggerXYZLogscmdexecutebtn").addEventListener("click", () => {
                 try{
                     eval(document.querySelector("#consoleLOggerXYZLogstextarea").value)
                 }finally{
-                    consoleLOggerXYZGrabLogs()
                     setTimeout(consoleLOggerXYZShowLogs, 0);
                     document.querySelector("#consoleLOggerXYZLogstextarea").value = ``
                 }
@@ -236,5 +234,6 @@ function consoleLOggerXYZBtnListener() {
     })
 }
 
-consoleLOggerXYZGrabLogs()
+
 consoleLOggerXYZBtnListener()
+
