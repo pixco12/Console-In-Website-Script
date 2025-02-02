@@ -220,7 +220,7 @@ function consoleLOggerXYZBtnListener() {
                     <textarea id="consoleLOggerXYZLogstextarea" placeholder="Execute Javascript Commands"></textarea>
                 </div>
             `
-            consoleLOggerXYZShowLogs()
+            setTimeout(consoleLOggerXYZShowLogs, 0);
             document.querySelector("#consoleLOggerXYZLogscmdexecutebtn").addEventListener("click", () => {
                 try{
                     eval(document.querySelector("#consoleLOggerXYZLogstextarea").value)
