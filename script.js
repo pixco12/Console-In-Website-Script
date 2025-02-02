@@ -96,6 +96,7 @@ function consoleLOggerXYZBtnListener() {
                         margin: 0;
                         box-sizing: border-box !important;
                         text-align: left !important;
+                        font-family: 'Courier New', Courier, monospace !important;
                     }
                     body{
                         padding: 0 !important;
@@ -185,7 +186,7 @@ function consoleLOggerXYZBtnListener() {
                     #consoleLOggerXYZLogscmdexecutebtn {
                         color: white !important;
                         background-color: rgb(77, 77, 77) !important;
-                        font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+                        font-family: 'Courier New', Courier, monospace !important;
                         text-align: center !important;
                         width: fit-content !important;
                         margin: auto !important;
