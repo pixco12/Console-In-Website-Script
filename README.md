@@ -8,7 +8,7 @@ Demo Website : https://consoleinwebsitescriptdemo.netlify.app/ (v 1.1.2)
 To setup you must :
 
 1. Open up the html of the website page you want it in.
-2. Copy and paste `<script src="https://cdn.jsdelivr.net/gh/pixco12/Console-In-Website-Script@main/script.js?v=1.1.3"></script>` into the body at the beginning of the body (make sure its before all your scripts). (check for version updates once in a while)
+2. Copy and paste `<script src="https://cdn.jsdelivr.net/gh/pixco12/Console-In-Website-Script@main/script.js?v=1.2.0"></script>` into the body at the beginning of the body (make sure its before all your scripts). (check for version updates once in a while)
 3. Your all set! Read the instructions on how to use.
 
 # How to use
@@ -16,6 +16,8 @@ To setup you must :
 - Click on the console icon at the bottom right of the website page you pasted the script in to view the console.
 - To execute a js command go to the console and enter the thing you want to execute into the text box and click the execute button above the text box.
 
-# Update Log (v 1.1.3)
+# Update Log (v 1.2.0)
 
-- Fixed Font Bugs
+- Fixed event listeners not working after opening Ui
+- Updated how the Ui is added to the HTML
+- Removed Unnessary stuff
