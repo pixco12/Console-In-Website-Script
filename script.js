@@ -166,6 +166,7 @@ function consoleLOggerXYZBtnListener() {
                         padding: 10px !important;
                         display: block !important;
                         width: 100% !important;
+                        font-family: 'Courier New', Courier, monospace !important;
                     }
 
                     .consoleLOggerXYZLogscmdexecute {
