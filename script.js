@@ -76,7 +76,6 @@ function consoleLOggerXYZShowLogs() {
     }
 }
 function consoleLOggerXYZBtnListener() {
-    consoleLOggerXYZGrabLogs()
     document.querySelector(".consoleLOggerXYZBtn").addEventListener("click", () => {
         if (document.getElementsByClassName("consoleLOggerXYZ").length > 0) {
             document.querySelector(".consoleLOggerXYZBtn h3").innerHTML = ">_"
@@ -220,6 +219,7 @@ function consoleLOggerXYZBtnListener() {
                     <textarea id="consoleLOggerXYZLogstextarea" placeholder="Execute Javascript Commands"></textarea>
                 </div>
             `
+            consoleLOggerXYZGrabLogs()
             setTimeout(consoleLOggerXYZShowLogs, 0);
             document.querySelector("#consoleLOggerXYZLogscmdexecutebtn").addEventListener("click", () => {
                 try{
@@ -236,4 +236,5 @@ function consoleLOggerXYZBtnListener() {
     })
 }
 
+consoleLOggerXYZGrabLogs()
 consoleLOggerXYZBtnListener()
