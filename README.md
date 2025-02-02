@@ -3,7 +3,7 @@ This is a js script that allows you to use and see the console of your website f
 
 Demo Website : https://consoleinwebsitescriptdemo.netlify.app/ (v 1.1.2)
 
-**Errors from the executed code using the text box wont show if your using safari, same goes for defining variables (it wont work).** This is due to safari's limitations.
+**Errors from the executed code using the text box wont show if your using Safari** This is due to Safari's restrictions.
 # How to setup
 To setup you must :
 
